@@ -20,7 +20,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');/*Baumans*/
 /*Nunito Maven Pro Righteous Monda Concert One Courgette Fredoka One Lobster Nerko One Poppins Playwrite HU*/
 /*Agbalumo     Style Script     Bungee Tint     Paytone One     Nunito  DM Sans      Plus Jakarta    Manrope*/
 
@@ -37,17 +37,28 @@
         min-height: 100vh;
         font-family: "Maven Pro", sans-serif;
         font-size: 17px;
+        display: flex;
+        flex-direction: column;
     }
     .topArea h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 34px;
         margin-top: 0; /* Remove default h2 margin */
-        color: #06070B;
+        color: white;
+        font-family:"Baumans" ;
     }
     .topArea {
         padding: 20px;
-        background-color: #FFC01D;
+        background-color: #4172e6;
+        color: white;
     }
     .contentArea {
         padding: 20px;
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
     }
     .date-input-wrapper {
         margin-top: 15px;
@@ -55,25 +66,57 @@
         width: 280px;
         display: flex;
         flex-direction: row;
-        background-color: pink;
         justify-content: space-between;
         align-items: center;
     }
-    .dateInputAreas {
+    .dateInputs {
+        cursor: pointer;
         width: 150px;
         height: 28px;
         border-radius: 3px;
     }
     .button_plus {
-        font-size: 25px; /* Adjust size of plus sign */
-        padding: 8px 12px; /* Comfortable click area */
-        background-color: #eeeeee; /* Match topArea color for consistency */
-        border: none;
+        margin-top: 10px;
+        width: 70px;
+        font-size: 30px; 
+        padding: 3px 7px; 
+        background-color: white; 
+        border: 2px solid #4172e6;
+        color: #4172e6;
         cursor: pointer;
         border-radius: 4px; /* Optional: rounded corners */
+    }
+    .button_plus:hover {
+        background-color: #4172e6;
+        color: white;
         font-weight: bold;
     }
-    
+    .delete-btn {
+        color: rgb(254, 251, 251);
+        cursor: pointer;
+        margin-left: 12px;
+        font-weight: bold;
+    }
+    .delete-btn:hover {
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .bottomArea {
+        padding: 15px;
+        background-color: aliceblue;;
+        color: #000000;  
+    }
+    .footerArea {
+        border-top:#000000 5px double;
+        display: flex;
+        flex-direction: row;
+        font-family: "Maven Pro";
+        font-size: 13px;
+    }
+    .footerArea p {
+        flex: 1;
+        margin: 8px;
+    }
 }
 @media (max-width: 780px) {
     

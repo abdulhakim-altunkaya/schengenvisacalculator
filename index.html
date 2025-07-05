@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Schengen Visa Calculator</title>
-  <link rel="stylesheet" href="./assets/css/index.css"> <!-- Your CSS -->
-  <script defer src="./assets/js/main.js"></script>
+    <meta charset="UTF-8">
+    <title>Schengen Visa Calculator</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/europe.svg">
+    <link rel="stylesheet" href="./assets/css/index.css"> <!-- Your CSS -->
+    <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
   <div class="mainArea">
@@ -15,30 +16,30 @@
 
     <!-- MAIN AREA -->
     <div class="contentArea">
+        <div class="inputArea">
             <div class="date-input-wrapper">
-                <label for="exitDate">Entry Date:</label>&nbsp;&nbsp;
-                <input type="date" id="entryDate" class="dateInputAreas">
+                <label for="entryDate">Entry Date:</label>&nbsp;&nbsp;
+                <input type="date" id="entryDate" class="dateInputs">
             </div>
-
             <div class="date-input-wrapper">
                 <label for="exitDate">Exit Date:</label>&nbsp;&nbsp;
-                <input type="date" id="exitDate" class="dateInputAreas">
-            </div>
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            
+                <input type="date" id="exitDate" class="dateInputs">
+            </div>            
             <button id="addTripBtn" class="button_plus">+</button>
-
-            <div>
-                <ul id="tripList"></ul>
-            </div>
-
-            <div class="resultSchengenCalculator" id="resultArea"></div>
+        </div>
+        <div>
+            <ul id="tripList"></ul>
+        </div>
+        <div class="resultSchengenCalculator" id="resultArea"></div>
     </div>
 
-    <!-- BOTTOM AREA -->
     <div class="bottomArea">
-        Bottom Area
+        <footer class="footerArea">
+            <p>contact: <a href="drysoftware1@gmail.com">drysoftware1@gmail.com</a> <br><br>
+            SVG icon: <a href="https://www.svgrepo.com/svg/241057/european-union-europe">SVG Repo</a> </p>
+            <p>📢 Interested in advertising? We welcome relevant partnerships and sponsors. Get in touch to discuss 
+                visibility and collaboration opportunities.</p>
+        </footer>
     </div>
     
   </div>
