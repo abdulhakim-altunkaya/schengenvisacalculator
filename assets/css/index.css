@@ -28,13 +28,15 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: "Maven Pro", sans-serif;
+        min-height: 100%;
     }
     .mainArea {
         width: 70%;
         margin: auto;
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2), 5px 0 5px rgba(0, 0, 0, 0.2);
-        
+        min-height: 100vh;
+        font-family: "Maven Pro", sans-serif;
+        font-size: 17px;
     }
     .topArea h2 {
         margin-top: 0; /* Remove default h2 margin */
@@ -44,6 +46,34 @@
         padding: 20px;
         background-color: #FFC01D;
     }
+    .contentArea {
+        padding: 20px;
+    }
+    .date-input-wrapper {
+        margin-top: 15px;
+        height: 35px;
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        background-color: pink;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dateInputAreas {
+        width: 150px;
+        height: 28px;
+        border-radius: 3px;
+    }
+    .button_plus {
+        font-size: 25px; /* Adjust size of plus sign */
+        padding: 8px 12px; /* Comfortable click area */
+        background-color: #eeeeee; /* Match topArea color for consistency */
+        border: none;
+        cursor: pointer;
+        border-radius: 4px; /* Optional: rounded corners */
+        font-weight: bold;
+    }
+    
 }
 @media (max-width: 780px) {
     

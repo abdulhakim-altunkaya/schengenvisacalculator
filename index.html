@@ -8,39 +8,39 @@
 </head>
 <body>
   <div class="mainArea">
+    <!-- TOP AREA -->
     <div class="topArea">  
         <h2>Schengen Visa Calculator (90/180 days)</h2>
     </div>
+
+    <!-- MAIN AREA -->
     <div class="contentArea">
-        Content Area
+            <div class="date-input-wrapper">
+                <label for="exitDate">Entry Date:</label>&nbsp;&nbsp;
+                <input type="date" id="entryDate" class="dateInputAreas">
+            </div>
+
+            <div class="date-input-wrapper">
+                <label for="exitDate">Exit Date:</label>&nbsp;&nbsp;
+                <input type="date" id="exitDate" class="dateInputAreas">
+            </div>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <button id="addTripBtn" class="button_plus">+</button>
+
+            <div>
+                <ul id="tripList"></ul>
+            </div>
+
+            <div class="resultSchengenCalculator" id="resultArea"></div>
     </div>
+
+    <!-- BOTTOM AREA -->
     <div class="bottomArea">
         Bottom Area
     </div>
     
-
-    <div class="inputAreaContainer2">
-      <div class="flex-container">
-        <div class="date-input-wrapper">
-          Entry Date:&nbsp;&nbsp;
-          <input type="date" id="entryDate" class="dateInputAreas">
-          <img src="/icons/calendar1.png" class="custom-calendar-icon" alt="Calendar Icon">
-        </div>
-
-        <div class="date-input-wrapper">
-          Exit Date:&nbsp;&nbsp;
-          <input type="date" id="exitDate" class="dateInputAreas">
-          <img src="/icons/calendar1.png" class="custom-calendar-icon" alt="Calendar Icon">
-        </div>
-      </div>&nbsp;&nbsp;&nbsp;&nbsp;
-      <button id="addTripBtn" class="button_plus"></button>
-    </div>
-
-    <div>
-      <ul id="tripList"></ul>
-    </div>
-
-    <div class="resultSchengenCalculator" id="resultArea"></div>
   </div>
 </body>
 </html>
