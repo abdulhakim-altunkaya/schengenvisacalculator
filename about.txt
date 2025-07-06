@@ -34,3 +34,6 @@ app.post('/save-data', async (req, res) => {
 app.listen(5000, () => {
   console.log(`Server running at http://localhost:${5000}`);
 });
+
+
+MAKE SURE MOUSE CLICK AND ALSO KEYBOARD ENTER WORKS 
