@@ -87,6 +87,14 @@ function updateResult() {
   }
 }
 
+async function logVisitor() {
+  try {
+    const response = await axios.post('https://www.ipradar.org/api/save-visitor/schengen', {});
+    console.log('Visitor log response:', response.data);
+  } catch (error) {
+    console.error('Visitor log error:', error.message);
+  }
+}
 
 addTripBtn.addEventListener('click', () => {
   const entryDate = entryInput.value;
@@ -102,12 +110,9 @@ addTripBtn.addEventListener('click', () => {
     exitInput.value = '';
     renderTrips();
     updateResult();
+    logVisitor();
   } else {
     alert('Invalid dates. Please check your input.');
   }
 });
 
-// Optional: Log page visit like in original React code
-fetch('/serversavevisitor/tools_schengen', { method: 'POST' }).catch(err => {
-  console.error('Visit logging failed:', err.message);
-});
