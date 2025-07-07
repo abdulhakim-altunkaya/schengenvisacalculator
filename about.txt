@@ -1,5 +1,4 @@
-MAKE SURE MOUSE CLICK AND ALSO KEYBOARD ENTER WORKS 
-add small screen
+
 activate allowedorigins array to block spam websites
 Remove about.txt when above steps finished
 Start google campaign
@@ -8,3 +7,5 @@ DONE:
 Domain and DNS configuration finished
 created robots.txt
 created sitemap.xml
+keyboard enter down also connected to main function
+add small screen

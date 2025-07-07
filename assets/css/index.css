@@ -116,6 +116,15 @@
     .footerArea p {
         flex: 1;
         margin: 8px;
+        text-align: justify;
+    }
+    #tripList li {
+        margin-bottom: 8px; /* or whatever spacing you prefer */
+    }
+    .footerDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 }
 @media (max-width: 780px) {
@@ -135,13 +144,14 @@
     }
 
     .topArea {
-        padding: 20px;
+        padding: 10px;
         background-color: #4172e6;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center; 
+        text-align: center;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
     }
     .topArea h2 {
         margin: 0;
@@ -156,7 +166,7 @@
         flex-grow: 2;
         display: flex;
         flex-direction: column;
-        background-color: lightyellow
+        background-color: aliceblue;
     }
     .date-input-wrapper {
         margin-top: 15px;
@@ -207,12 +217,22 @@
     .footerArea {
         border-top:#000000 5px double;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         font-family: "Maven Pro";
         font-size: 13px;
     }
     .footerArea p {
         flex: 1;
-        margin: 8px;
+        margin: 4px;
+        text-align: justify;
     }
+    #tripList li {
+        margin-bottom: 8px; /* or whatever spacing you prefer */
+    }
+    .footerDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
 }
