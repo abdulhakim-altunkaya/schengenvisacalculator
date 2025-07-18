@@ -1,4 +1,4 @@
-let trips = [];
+let trips = []; 
 
 const entryInput = document.getElementById('entryDate');
 const exitInput = document.getElementById('exitDate');
@@ -137,9 +137,9 @@ async function logVisitor() {
     console.log('Visitor log response:', response.data);
   } catch (error) {
     if (error.response?.status === 429) {
-      console.warn('Visitor already logged recently; skipping.');
+      console.log('Visitor already logged recently; skipping.');
     } else {
-      console.error('Visitor log error:', error.message);
+      console.log('Visitor log error:', error.message);
     }
   }
 }
